@@ -1,12 +1,12 @@
 # dependencies
 node_modules/
-package-lock.json
 
 # output / build files
 dist/
 out/
 *.pdf
 *.tgz
+*.pdf
 
 # logs
 npm-debug.log*
