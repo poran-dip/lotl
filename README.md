@@ -1,11 +1,11 @@
-# 🦎 lotl — Markdown to PDF with Axolotl Power
+# lotl — Markdown to PDF (with Axolotl Power!)
 
 **lotl** is a fast, simple CLI tool to convert your Markdown files into beautiful PDFs — with themes, margins, headers, footers, and even recursive directory conversion.
-Powered by [Puppeteer](https://pptr.dev/), [marked](https://marked.js.org/), and a little axolotl magic. ✨
+Powered by [Puppeteer](https://pptr.dev/), [marked](https://marked.js.org/), and a little axolotl magic.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 
 **Install from npm:**
@@ -30,7 +30,7 @@ npm link
 
 ---
 
-## 📦 Usage
+## Usage
 
 ```bash
 lotl <input> [options]
@@ -39,7 +39,7 @@ lotl <input> [options]
 **Examples:**
 
 ```bash
-lotl README.md                    # Convert single file
+lotl README.md                     # Convert single file
 lotl .                             # Convert all .md files in current directory
 lotl docs/                         # Convert all .md files in docs/ folder
 lotl . -r                          # Recursively convert all .md files
@@ -51,7 +51,7 @@ lotl doc.md --no-header --margin 30mm
 
 ---
 
-## ⚙️ Options
+## Options
 
 | Option            | Description                                   | Default |
 | ----------------- | --------------------------------------------- | ------- |
@@ -65,7 +65,7 @@ lotl doc.md --no-header --margin 30mm
 
 ---
 
-## 🎨 Themes
+## Themes
 
 * **github** – clean and familiar GitHub-style
 * **dark** – dark mode for night owls
@@ -80,7 +80,7 @@ console.log(Object.keys(themes)); // ['github', 'dark', 'minimal']
 
 ---
 
-## 📜 Programmatic API
+## Programmatic API
 
 You can also use **lotl** directly in your Node.js code:
 
@@ -97,7 +97,7 @@ await convertMdToPdf('README.md', 'output.pdf', {
 
 ---
 
-## 🛠 Development
+## Development
 
 ```bash
 npm install       # install dependencies
@@ -107,13 +107,13 @@ npm start         # run CLI from source
 
 ---
 
-## 🧾 License
+## License
 
 MIT © 2025 Poran Dip
 
 ---
 
-> 🦎 *“Because every PDF deserves a little axolotl love.”*
+> *“Because every PDF deserves a little axolotl love.”*
 
 ---
 
