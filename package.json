@@ -5,21 +5,31 @@
   "description": "🦎 Convert Markdown to PDF with axolotl power",
   "main": "index.js",
   "bin": {
-    "lotl": "./bin/lotl.js"
+    "lotl": "bin/lotl.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test/test.js",
     "dev": "npm link",
     "build": "echo 'No build step needed'",
     "start": "node bin/lotl.js"
   },
-  "keywords": ["markdown", "pdf", "cli", "converter"],
+  "keywords": [
+    "markdown",
+    "pdf",
+    "cli",
+    "converter"
+  ],
   "author": "Poran Dip",
   "license": "MIT",
   "dependencies": {
-    "marked": "^16.1.2",
-    "puppeteer": "^24.16.1",
+    "chalk": "^5.5.0",
     "commander": "^14.0.0",
-    "chalk": "^5.5.0"
+    "marked": "^16.1.2",
+    "puppeteer": "^24.16.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0"
   }
 }

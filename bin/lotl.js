@@ -41,7 +41,7 @@ async function handleSingleFile(inputPath, options) {
     throw new Error(`Not a markdown file: ${basename(inputPath)}`);
   }
   
-        console.log(chalk.blue('🦎 Converting markdown to PDF...'));
+  console.log(chalk.blue('🦎 Converting markdown to PDF...'));
   
   const outputPath = options.output 
     ? resolve(options.output)
@@ -120,7 +120,7 @@ function isMarkdownFile(filePath) {
 program.addHelpText('after', `
 
 Examples:
-  $ lotl README.md                    # Convert single file
+  $ lotl README.md                   # Convert single file
   $ lotl .                           # Convert all .md files in current directory
   $ lotl docs/                       # Convert all .md files in docs/ folder
   $ lotl . -r                        # Recursively convert all .md files
