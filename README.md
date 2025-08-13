@@ -3,13 +3,18 @@
 **lotl** is a fast, simple CLI tool to convert your Markdown files into beautiful PDFs — with themes, margins, headers, footers, and even recursive directory conversion.
 Powered by [Puppeteer](https://pptr.dev/), [marked](https://marked.js.org/), and a little axolotl magic. ✨
 
-> **Transparency Note:** This entire project was created in about 30 minutes using AI assistance for all code, documentation, and structure. I (Poran Dip) basically wrote *zero* lines of code myself — it’s both a transparency thing and a little flex in prompt engineering skills. 😎
-
 ---
 
 ## 🚀 Installation
 
-**Local development:**
+
+**Install from npm:**
+
+```bash
+npm install -g lotl
+```
+
+**Local development/Contributions:**
 
 ```bash
 # clone the repo
@@ -21,12 +26,6 @@ npm install
 
 # link the CLI globally for dev
 npm link
-```
-
-**(future) Install from npm:**
-
-```bash
-npm install -g lotl
 ```
 
 ---
@@ -115,3 +114,7 @@ MIT © 2025 Poran Dip
 ---
 
 > 🦎 *“Because every PDF deserves a little axolotl love.”*
+
+---
+
+**Transparency Note:** Most of this project was created using AI assistance. I (Poran Dip) wanted a MD to PDF converter CLI, and I wanted it *yesterday*, so AI was used to achieve that. I'm including this both for transparency and as a little flex in prompt engineering skills. 😎 However, that also means to expect bugs and things to break, and I'd love if you could open issues about them! I'll maintain this for a while and actually make proper changes myself, as needed.

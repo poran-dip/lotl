@@ -1,4 +1,4 @@
-# LotL Test File
+# lotl Test File
 
 This is a **test markdown file** to verify that LotL correctly converts Markdown → PDF.
 
