@@ -13,6 +13,7 @@ program
   .argument('<input>', 'Input markdown file or directory')
   .option('-o, --output <file>', 'Output PDF file (for single file) or directory (for batch)')
   .option('-t, --theme <theme>', 'Theme (github, dark, minimal)', 'github')
+  .option('--title <title>', 'Custom document title')
   .option('-m, --margin <margin>', 'Page margins (e.g., "20mm")', '20mm')
   .option('-f, --format <format>', 'Page format (A4, Letter, Legal)', 'A4')
   .option('--no-header', 'Disable header')
