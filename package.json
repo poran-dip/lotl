@@ -1,16 +1,25 @@
 {
   "name": "lotl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "Convert Markdown to PDF with axolotl power",
   "main": "index.js",
+  "files": [
+    "bin/",
+    "lib/",
+    "index.js"
+  ],
   "bin": {
     "lotl": "bin/lotl.js"
   },
+  "exports": {
+    ".": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "node test/test.js",
-    "dev": "npm link",
-    "build": "echo 'No build step needed'",
     "start": "node bin/lotl.js"
   },
   "keywords": [
@@ -23,8 +32,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/poran-dip/lotl"
+    "url": "https://github.com/poran-dip/lotl.git"
   },
+  "bugs": {
+    "url": "https://github.com/poran-dip/lotl/issues"
+  },
+  "homepage": "https://github.com/poran-dip/lotl#readme",
   "dependencies": {
     "chalk": "^5.6.2",
     "commander": "^14.0.2",

@@ -7,8 +7,8 @@ This is a **test markdown file** to verify that LotL correctly converts Markdown
 ## Text Styles
 
 - **Bold text**
-- *Italic text*
-- ***Bold & Italic***
+- _Italic text_
+- **_Bold & Italic_**
 - `Inline code` works too
 
 > Blockquotes should render with a left border
@@ -18,12 +18,14 @@ This is a **test markdown file** to verify that LotL correctly converts Markdown
 ## Lists
 
 ### Unordered
+
 - Item 1
 - Item 2
   - Nested item 2a
   - Nested item 2b
 
 ### Ordered
+
 1. First
 2. Second
 3. Third
@@ -31,12 +33,14 @@ This is a **test markdown file** to verify that LotL correctly converts Markdown
 ---
 
 ## Links
+
 - [Google](https://google.com)
 - [GitHub](https://github.com)
 
 ---
 
 ## Code Blocks
+
 ```js
 function hello() {
   console.log("Hello LotL!");
@@ -47,8 +51,9 @@ hello();
 ---
 
 ## Table
+
 | Name    | Age | Role      |
-|---------|-----|-----------|
+| ------- | --- | --------- |
 | Poran   | 21  | Developer |
 | Axolotl | ?   | Mascot    |
 

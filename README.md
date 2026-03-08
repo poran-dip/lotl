@@ -7,7 +7,6 @@ Powered by [Puppeteer](https://pptr.dev/), [marked](https://marked.js.org/), and
 
 ## Installation
 
-
 **Install from npm:**
 
 ```bash
@@ -53,28 +52,29 @@ lotl doc.md --no-header --margin 30mm
 
 ## Options
 
-| Option            | Description                                   | Default |
-| ----------------- | --------------------------------------------- | ------- |
-| `-o, --output`    | Output PDF file (single) or directory (batch) | auto    |
-| `-t, --theme`     | Theme (`github`, `dark`, `minimal`)           | github  |
-| `-m, --margin`    | Page margins (e.g., `"20mm"`)                 | 20mm    |
-| `-f, --format`    | Page format (`A4`, `Letter`, `Legal`)         | A4      |
-| `--no-header`     | Disable header                                | enabled |
-| `--no-footer`     | Disable footer                                | enabled |
-| `-r, --recursive` | Process subdirectories recursively            | false   |
+| Option            | Description                                   | Default  |
+| ----------------- | --------------------------------------------- | -------- |
+| `-o, --output`    | Output PDF file (single) or directory (batch) | auto     |
+| `-t, --theme`     | Theme (`github`, `dark`, `minimal`)           | github   |
+| `-m, --margin`    | Page margins (e.g., `"20mm"`)                 | 20mm     |
+| `-f, --format`    | Page format (`A4`, `Letter`, `Legal`)         | A4       |
+| `--title`         | PDF title                                     | Document |
+| `--no-header`     | Disable header                                | enabled  |
+| `--no-footer`     | Disable footer                                | enabled  |
+| `-r, --recursive` | Process subdirectories recursively            | false    |
 
 ---
 
 ## Themes
 
-* **github** – clean and familiar GitHub-style
-* **dark** – dark mode for night owls
-* **minimal** – clean, serif-based look
+- **github** – clean and familiar GitHub-style
+- **dark** – dark mode for night owls
+- **minimal** – clean, serif-based look
 
 You can also import the theme list in JavaScript:
 
 ```js
-import { themes } from 'lotl';
+import { themes } from "lotl";
 console.log(Object.keys(themes)); // ['github', 'dark', 'minimal']
 ```
 
@@ -85,13 +85,13 @@ console.log(Object.keys(themes)); // ['github', 'dark', 'minimal']
 You can also use **lotl** directly in your Node.js code:
 
 ```js
-import { convertMdToPdf, themes } from 'lotl';
+import { convertMdToPdf, themes } from "lotl";
 
-await convertMdToPdf('README.md', 'output.pdf', {
-  theme: 'dark',
-  format: 'Letter',
-  margin: '25mm',
-  header: false
+await convertMdToPdf("README.md", "output.pdf", {
+  theme: "dark",
+  format: "Letter",
+  margin: "25mm",
+  header: false,
 });
 ```
 
@@ -109,12 +109,12 @@ npm start         # run CLI from source
 
 ## License
 
-MIT © 2025 Poran Dip
+© 2025–2026 Poran Dip (licensed under [Apache-2.0](LICENSE))
 
 ---
 
-> *“Because every PDF deserves a little axolotl love.”*
+> _“Because every PDF deserves a little axolotl love.”_
 
 ---
 
-**Transparency Note:** Most of this project was created using AI assistance. I (Poran Dip) wanted a MD to PDF converter CLI, and I wanted it *yesterday*, so AI was used to achieve that. I'm including this both for transparency and as a little flex in prompt engineering skills. 😎 However, that also means to expect bugs and things to break, and I'd love if you could open issues about them! I'll maintain this for a while and actually make proper changes myself, as needed.
+**Transparency Note:** Most of this project was created using AI assistance. I (Poran Dip) wanted a MD to PDF converter CLI, and I wanted it _yesterday_, so AI was used to achieve that. I'm including this both for transparency and as a little flex in prompt engineering skills. 😎 However, that also means to expect bugs and things to break, and I'd love if you could open issues about them! I'll maintain this for a while and actually make proper changes myself, as needed.
