@@ -1,6 +1,6 @@
 {
   "name": "lotl",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "type": "module",
   "description": "Convert Markdown to PDF with axolotl power",
   "main": "index.js",
