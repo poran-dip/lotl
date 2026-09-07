@@ -13,7 +13,27 @@
     "url": "https://github.com/poran-dip/lotl/issues"
   },
   "homepage": "https://github.com/poran-dip/lotl#readme",
+  "keywords": [
+    "markdown",
+    "pdf",
+    "cli",
+    "converter"
+  ],
+  "scripts": {
+    "test": "node test/test.js",
+    "start": "node bin/lotl.js"
+  },
   "packageManager": "pnpm@12.3.4",
+  "dependencies": {
+    "chalk": "^6.0.0",
+    "commander": "^15.0.0",
+    "marked": "^18.0.11",
+    "puppeteer": "^25.10.0"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=12"
+  },
   "main": "index.js",
   "files": [
     "bin/",
@@ -25,24 +45,5 @@
   },
   "exports": {
     ".": "./index.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "scripts": {
-    "test": "node test/test.js",
-    "start": "node bin/lotl.js"
-  },
-  "keywords": [
-    "markdown",
-    "pdf",
-    "cli",
-    "converter"
-  ],
-  "dependencies": {
-    "chalk": "^6.0.0",
-    "commander": "^15.0.0",
-    "marked": "^18.0.11",
-    "puppeteer": "^25.10.0"
   }
 }
